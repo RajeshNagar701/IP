@@ -1,0 +1,86 @@
+<script>
+/*
+JavaScript Objects
+A javaScript object is an entity having state and behavior (properties and method). 
+For example: car, pen, bike, chair, glass, keyboard, monitor etc.
+
+JavaScript is an object-based language. Everything is an object in JavaScript.
+
+JavaScript is template based not class based. Here, we don't create class to 
+get the object. But, we direct create objects.
+
+Creating Objects in JavaScript
+There are 3 ways to create objects.
+
+By object literal
+
+By creating instance of Object directly (using new keyword)
+
+By using an object constructor (using new keyword)
+
+
+*/
+
+//By object literal
+var emp1={id:101,name:"Ram Kumar",salary:80000};
+console.log(emp1);
+document.write(emp1.id+" "+emp1.name+" "+emp1.salary + "<br>");
+
+ 
+var emp2={id:102,name:"Shyam Kumar",salary:40000,age:"33",mobile:"1234567890"};
+
+for(property in emp2)
+{
+	document.write("<h1>" + emp2[property] + "</h1>");
+}
+
+//================================================================================''
+
+obj_arr=[
+			{id:101,name:"Shyam Kumar",salary:40000},
+			{id:102,name:"Raj Kumar",salary:40000},
+			{id:103,name:"NIRAV Kumar",salary:40000}
+		];
+
+document.write(obj_arr[2].id+" "+obj_arr[2].name+" "+obj_arr[2].salary + "<br><br><br>");
+
+for(data of obj_arr)
+{
+	document.write(data.id+" "+data.name+" "+data.salary + "<br>");
+}
+
+
+for(var i=0;i<obj_arr.length;i++)
+{
+	document.write(obj_arr[i].id+" "+obj_arr[i].name+" "+obj_arr[i].salary + "<br>");
+}
+
+
+
+// emp={} instance of Object directly (using new keyword)
+/*
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+
+*/
+
+/*
+constructor (using new keyword)
+
+function emp(id,name,salary)
+{  
+	this.userid=id;
+	this.username=name;
+	this.usersalary=salary;
+}  
+obj=new emp(103,"Vimal Jaiswal",30000);
+obj1=new emp(104,"Ajay Jaiswal",40000);
+
+
+*/
+
+</script>
