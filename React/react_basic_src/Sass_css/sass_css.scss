@@ -1,0 +1,89 @@
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+p{
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+}
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+  
+
+  .nested1{
+    font: {
+      family: Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+  }
+
+  .nested2{
+    text: {
+      align: center;
+      transform: lowercase;
+      overflow: hidden;
+    }
+  }
+  
+
+  .button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: lightgray
+  }
+
+  .btn-blue{
+    @extend .button-basic;
+    background-color: blue;
+  }
+
+  .btn-red{
+    @extend .button-basic;
+    background-color: red;
+  }
+  
+  .btn-green{
+    @extend .button-basic;
+    background-color: green;
+  }
+
+  .btn-yellow{
+    @extend .button-basic;
+    background-color: yellow;
+  }
+
+  .btn-pink{
+    @extend .button-basic;
+    background-color: pink;
+  }
+
+  .btn-orange{
+    @extend .button-basic;
+    background-color: orange;
+  }
+
+  
+  
+
+
+  
